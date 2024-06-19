@@ -1,0 +1,63 @@
+:root {
+  --primary-background-color: #242424;
+  --primary-text-color: #fff;
+  --primary-button-color: #007bff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+input {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+#caclulate-bmi {
+  padding: 0.8rem 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-button-color);
+  color: var(--primary-text-color);
+  border: none;
+}
+
+.main p,
+span {
+  margin: 0 0 1rem 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
