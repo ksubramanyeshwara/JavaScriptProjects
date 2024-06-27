@@ -1,0 +1,81 @@
+:root {
+  --primary-background-color: #242424;
+  --primary-text-color: #fff;
+  --primary-button-color: #007bff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  font-size: 2rem;
+  justify-content: center;
+}
+
+form label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#todo-input {
+  padding: 0.6rem 0.2rem;
+  width: 15rem;
+  border-radius: 0.2rem;
+}
+
+button {
+  border: none;
+  background-color: var(--primary-button-color);
+  color: var(--primary-text-color-color);
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+#todo-list {
+  margin: 1rem 0 0 0;
+}
+
+.list {
+  padding: 0.6rem;
+  margin: 1rem;
+  width: 40vw;
+  color: var(--primary-text-color);
+  background-color: #398030;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.fa-trash::before {
+  content: "";
+  display: none;
+}
+
+.fa-trash::after {
+  content: "\f1f8";
+  font-family: FontAwesome;
+  left: 7rem;
+  position: relative;
+  top: 0;
+  color: #fff;
+}
